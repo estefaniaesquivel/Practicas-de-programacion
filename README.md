@@ -1,1 +1,1 @@
-# Pr-cticas-de-programaci-n
+# Practicas-de-programacion
