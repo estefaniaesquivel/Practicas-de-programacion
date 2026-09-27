@@ -1,17 +1,21 @@
 package JAVA.Veterinaria.Practica;
 
-public class Perro{
+public class Animal{
 
     private String nombre;
     private String tipoAnimal;
     private String raza;
     private int edad;
 
-    public Perro(String nombre, String tipoAnimal, String raza, int edad){
+    public Animal(String nombre, String tipoAnimal, String raza, int edad){
         this.nombre=nombre;
         this.tipoAnimal=tipoAnimal;
         this.raza=raza;
         this.edad=edad;
+    }
+
+    public Animal(){
+        
     }
 
     @Override //se pone override porque toString cumple polimorfismo
