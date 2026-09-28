@@ -29,7 +29,7 @@ public class Animal{
     public void setNombre(String nombre){
         this.nombre = nombre;
     }
-    public String getTipoAnimString(){
+    public String getTipoAnimal(){
         return tipoAnimal;
     }
     public void setTipoAnimal(String tipoAnimal){

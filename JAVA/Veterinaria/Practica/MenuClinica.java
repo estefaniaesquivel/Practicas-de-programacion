@@ -11,7 +11,7 @@ public class MenuClinica {
         //medico con scan
         Scanner scanner = new Scanner(System.in);
         Medico medico2 = new Medico();
-        System.out.println("nombre: ");
+        System.out.println("nombre medico: ");
         medico2.setNombre(scanner.nextLine());
         System.out.println("apellido paterno: ");
         medico2.setApellidoPaterno(scanner.nextLine());
@@ -28,8 +28,11 @@ public class MenuClinica {
         //cita hardcodeo
         Cita cita1= new Cita(animal1, medico1, "27-09-26", "revision general");//tiene que seguir el orden de las referencias en el constructor
         System.out.println(cita1);
-
+        SignosVitales signosVitales1 = new SignosVitales(animal1, 4.50, 28.2);
         
+        Consulta consulta1 = new Consulta(animal1, cita1, signosVitales1, "Infeccion");
+        System.out.println(consulta1);
+       
 
         scanner.close();
 
