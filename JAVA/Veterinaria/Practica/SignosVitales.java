@@ -17,7 +17,7 @@ public class SignosVitales {
 
     @Override 
     public String toString(){
-        return "Signos de " +  animal + ": " + peso + "kg, " + temperatura + "°" + "\n Registro de los signos de "+ animal.getNombre() + " finalizados.";
+        return "Signos de " +  animal + ": " + peso + "kg, " + temperatura + "°" + "\nRegistro de los signos de "+ animal.getNombre() + " finalizados.";
     }
 
     public double getPeso() {
