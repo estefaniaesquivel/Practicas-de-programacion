@@ -4,11 +4,14 @@ public class Ingrediente {
     private String nombre;
     private double cantidad;
     private String  unidadMedida;
+    private boolean disponible;
 
-    public Ingrediente(String nombre, double Cantidad){
+    public Ingrediente(String nombre, double cantidad, String unidadMedida, boolean disponible){
         this.nombre = nombre;
         this.cantidad = cantidad;
         this.unidadMedida=unidadMedida;
+        this.disponible = disponible;
+        
     }
     public Ingrediente(){
 
@@ -35,5 +38,15 @@ public class Ingrediente {
     public void setUnidadMedida(String unidadMedida) {
         this.unidadMedida = unidadMedida;
     }
+
+    public boolean isDisponible() {
+        return disponible;
+    }
+
+    public void setDisponible(boolean disponible) {
+        this.disponible = disponible;
+    }
+    
+    
     
 }
