@@ -25,6 +25,8 @@ public class RecetaPolloALaCrema {
         materiales.registrarUtensilio(tabla);
         materiales.registrarUtensilio(cuchillo);
 
+        materiales.mostrarMateriales();
+
         ListaCompras listaDeCompras = new ListaCompras(materiales);
         listaDeCompras.mostrarIngredientes();
 

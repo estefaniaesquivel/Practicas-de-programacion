@@ -17,6 +17,11 @@ public class Ingrediente {
 
     }
 
+    @Override
+    public String toString() {
+        return cantidad + " " + unidadMedida + " de " + nombre;
+    }
+
     public String getNombre() {
         return nombre;
     }
