@@ -3,7 +3,7 @@ package JAVA.Receta.PolloALaCrema;
 public class Cocina {
 
     public void prepararMateriales() {
-        System.out.println("Todos los ingredientes y utensilios han sido puestos en la mesa de la cocina");
+        System.out.println("\nTodos los ingredientes y utensilios han sido puestos en la mesa de la cocina");
     }
 
     public void descongelarYLavar(Ingrediente ingrediente) {

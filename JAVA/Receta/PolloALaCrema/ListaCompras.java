@@ -18,7 +18,7 @@ public class ListaCompras {
         if(listaCompras.isEmpty()){
             System.out.println("No falta nada");
         }else{
-            System.out.println("LISTA DE COMPRAS:");
+            System.out.println("\nLISTA DE COMPRAS:");
             for (Ingrediente ingrediente : listaCompras) {
                 System.out.println(ingrediente);
             }

@@ -14,6 +14,7 @@ public class Materiales {
         listaUtensilios.add(utensilio);
     }
     public void mostrarMateriales(){
+        System.out.println("\nMATERIALES:");
         for (Ingrediente ingrediente : listaIngredientes) {
             System.out.println(ingrediente);
         }
