@@ -1,0 +1,55 @@
+*{
+    box-sizing: border-box;
+
+    margin: 0;
+
+    padding: 0;
+
+}
+
+.contenedor-principal{
+    width: 100%; /*Define que la caja ocupará todo el ancho disponible de la pantalla o de su elemento contenedor.*/
+    max-width: 1350px; /*Fija un límite máximo de expansión, todas las cajas deben entrar en la estructura del contenedor*/
+    margin: 0 auto; /*Centra el contenedor horizontalmente*/
+    border: 2px groove #000000; /*Crea un borde alrededor de todo el contenedor de un grosor de 2 píxeles*/
+    background-color: #fff;
+    display: flex; /*activa el modelo de caja flexible, alinea de forma automática las cajas dentro de un contenedor*/
+    flex-direction: column; /*flex-direction: column cambia la dirección predeterminada de los elementos en un 
+    contenedor flexible: en lugar de alinearlos horizontalmente en una fila, los acomoda verticalmente en columna, uno debajo del otro*/
+    gap: 6px; /*Antiguamente, para separar el encabezado del contenido tenías que calcular márgenes 
+    en cada elemento (margin-bottom, margin-top). Con gap: 6px;, el contenedor principal se encarga de poner exactamente 6 píxeles de 
+    separación limpia y uniforme entre cada bloque de forma automática, sin que tengas que programarle un margen individual a cada uno.*/
+    padding: 8px; /*para que los rectangulos/cajas no esten pegadas al borde del contenedor*/
+
+    /*Cuando un contenedor flex organiza sus elementos, los pega al borde a menos que tengan un margen externo*/
+
+}
+
+header, .header-registro-signos{
+    /*dentro de cada caja padding sirve para separar los bordes de la caja con los TEXTOS y
+     ELEMENTOS que tiene adentro (como el título y el buscador) */
+    /*el primer valor (6px) aplica para la parte superior e inferior (arriba y abajo), y 
+    el segundo valor (8px) aplica para los lados*/
+    padding: 20px 30px; 
+    background-color: #14006e;
+    display: flex; /*se necesita ya que si no se pone  las herramientas de alineación y distribución como align-items o justify-content no funcionan */
+    align-items: center; /*Sin align-items: center;, los elementos por defecto se acomodarían pegados a la parte de arriba de la caja*/ 
+    justify-content: space-between; /*Controla la distribución horizontal, lo que hace space-between 
+    es empujar los elementos hacia los extremos opuestos, manda uno completamente a la izquierda y 
+    el otro completamente a la derecha. Esto sirve para poner dentro el buscador a la  derecha*/
+}
+
+header h1, .header-registro-signos h1 {
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.form-buscar {
+    gap: 4px; /*para separar elementos*/
+    display: flex;
+}
+
+.seccion-ver-tablas {
+    border: 2px groove #000000;
+    padding: 6px 8px;
+}

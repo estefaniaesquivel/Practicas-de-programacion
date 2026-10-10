@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Clinica</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles-clinica.css">
+
+    </head>
+
+    <body>
+
+        <div class = "contenedor-principal"> <!-- Registro de signos vitales -->
+            <header class="header-registro-signos">
+                <h1 >Registro de signos vitales</h1> 
+                <!-- Para que sea funcional el formulario se agrega action y un método POST -->
+                <form id="formBuscar" action="php/buscar.php" method="POST" class="form-buscar">
+                    <!--type="submit, cuando el usuario hace clic en él, el navegador automáticamente 
+                    recopila los datos del formulario y los manda hacia la ruta indicada en el action -->
+                    <button type="submit">Buscar</button>
+                    <!--type="text": Crea una caja de texto normal de una sola línea-->
+                    <input type="text" id="inputBuscar" name="campo_busqueda">
+                </form>
+            </header>
+
+            <div class = "seccion-ver-tablas">
+                <a href="tablas-rangos.html">Ver tablas de rango de normalidad de signos</a>
+
+                
+            </div>
+
+        </div>
+    </body>
+    
+</html>
