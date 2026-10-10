@@ -1,31 +1,29 @@
 *{
     box-sizing: border-box;
-
     margin: 0;
-
     padding: 0;
-
 }
 
 .contenedor-principal{
     width: 100%; /*Define que la caja ocupará todo el ancho disponible de la pantalla o de su elemento contenedor.*/
     max-width: 1350px; /*Fija un límite máximo de expansión, todas las cajas deben entrar en la estructura del contenedor*/
     margin: 0 auto; /*Centra el contenedor horizontalmente*/
-    border: 2px groove #000000; /*Crea un borde alrededor de todo el contenedor de un grosor de 2 píxeles*/
-    background-color: #fff;
+    border: 2px solid #000000; /*Crea un borde alrededor de todo el contenedor de un grosor de 2 píxeles*/
+    background-color: #e4f1ff;
     display: flex; /*activa el modelo de caja flexible, alinea de forma automática las cajas dentro de un contenedor*/
     flex-direction: column; /*flex-direction: column cambia la dirección predeterminada de los elementos en un 
     contenedor flexible: en lugar de alinearlos horizontalmente en una fila, los acomoda verticalmente en columna, uno debajo del otro*/
     gap: 6px; /*Antiguamente, para separar el encabezado del contenido tenías que calcular márgenes 
     en cada elemento (margin-bottom, margin-top). Con gap: 6px;, el contenedor principal se encarga de poner exactamente 6 píxeles de 
-    separación limpia y uniforme entre cada bloque de forma automática, sin que tengas que programarle un margen individual a cada uno.*/
+    separación limpia y uniforme entre cada bloque de forma automática, sin que tengas que programarle un margen 
+    individual a cada uno, gap es un beneficio directo de usar Flexbox*/
     padding: 8px; /*para que los rectangulos/cajas no esten pegadas al borde del contenedor*/
 
     /*Cuando un contenedor flex organiza sus elementos, los pega al borde a menos que tengan un margen externo*/
 
 }
 
-header, .header-registro-signos{
+header, .header-clinica{
     /*dentro de cada caja padding sirve para separar los bordes de la caja con los TEXTOS y
      ELEMENTOS que tiene adentro (como el título y el buscador) */
     /*el primer valor (6px) aplica para la parte superior e inferior (arriba y abajo), y 
@@ -50,6 +48,17 @@ header h1, .header-registro-signos h1 {
 }
 
 .seccion-ver-tablas {
-    border: 2px groove #000000;
+    border: 2px solid #000000;
     padding: 6px 8px;
+}
+
+/*si solo pones el <nav> sin estilos, no se va al centro por arte de magia. Si se vio en el medio en 
+el ejemplo anterior, fue porque el contenedor padre (header) tenía justify-content: space-between;. 
+Esa propiedad agarró al título (primer elemento), al <nav> (segundo elemento) y a la caja de la
+ derecha (tercer elemento), y los repartió empujando los extremos, lo que hizo que el <nav> 
+ quedara atrapado en el medio.*/
+.nav-enlaces{
+    display: flex;
+    gap: 40px;
+
 }
