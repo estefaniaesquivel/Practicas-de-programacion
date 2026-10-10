@@ -50,6 +50,7 @@ header h1, .header-registro-signos h1 {
 .seccion-ver-tablas {
     border: 2px solid #000000;
     padding: 6px 8px;
+    
 }
 
 /*si solo pones el <nav> sin estilos, no se va al centro por arte de magia. Si se vio en el medio en 
@@ -60,5 +61,13 @@ Esa propiedad agarró al título (primer elemento), al <nav> (segundo elemento) 
 .nav-enlaces{
     display: flex;
     gap: 40px;
+    align-items: center;
 
+}
+
+.nav-enlaces a {
+    color: #ffffff;              /* Texto blanco para que resalte en el fondo oscuro */
+    text-decoration: none;       /* Quita el subrayado feo */
+    font-size: 0.95rem;
+    font-weight: 500;
 }
