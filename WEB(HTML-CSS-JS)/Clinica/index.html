@@ -11,17 +11,18 @@
 
         <div class = "contenedor-principal"> <!-- Registro de signos vitales -->
             <header class="header-clinica">
-                <img src="https://consulta-cfdi.starmedica.com:8088/Images/logo-starmedica.png" alt="clinica" width="300"></img> 
+                <img src="https://www.cirugiaobesidadver.com/wp-content/uploads/2018/10/Star-Me%CC%81dica-Logo-blanco-1024x445.png" alt="clinica" width="200"></img> 
+                <br></br>
 
             <nav class="nav-enlaces">
                 <a href="#">Inicio</a>
-                <a href="#">Pacientes</a>
-                <a href="#">Doctores</a>
+                <a href="pacientes.html">Pacientes</a>
+                <a href="doctores.html">Doctores</a>
                 <a href="#">Ayuda</a>
             </nav>
 
-            <div class="header-acciones">
-                <a href="#" class="btn-cuenta">Mi Cuenta</a>
+            <div class="header-cuenta">
+                <a href="usuario.html" class="boton">Mi Cuenta</a>
             </div>
 
                 
@@ -29,6 +30,7 @@
 
             <div class = "seccion-ver-tablas">
                 <a href="tablas-rangos.html">Ver tablas de rango de normalidad de signos</a>
+
 
                 
             </div>
@@ -43,6 +45,202 @@
                     <input type="text" id="inputBuscar" name="campo_busqueda">
                 </form>
             </div>
+
+            <h1>Registro de pacientes nuevos</h1>
+
+            <div class = "columnas">
+
+
+                <div class = "columna-datos-personales">
+                    <fieldset>
+                    
+                        <legend>Datos personales del paciente sin registro:</legend>
+
+                        <p>Nombre:</p>
+                        <label>
+                            <input type="text" id= "inputNombre" name="nombre">
+                        </label>
+
+                        <p>Apellido paterno:</p>
+                        <label>
+                            <input type="text" id= "inputApPaterno" name="apellido-pa">
+                        </label>
+
+                        <p>Apellido Materno:</p>
+                        <label>
+                            <input type="text" id= "inputApMaterno" name="apellido-ma">
+                        </label>
+
+                        <p>Edad:</p>
+                        <label>
+                            <input type="text" id= "inputEdad" name="edad">
+                        </label>
+
+                        <p>Altura:</p>
+                        <label>
+                            <input type="text" id= "inputAltura" name="altura">
+                        </label>
+
+                        <p>Peso:</p>
+                        <label>
+                            <input type="text" id= "inputPeso" name="peso">
+                        </label>
+
+
+                        <p>No. Celular:</p>
+                        <label>
+                            <input type="text" id= "inputCel" name="celular">
+                        </label>
+
+                        <br></br>
+
+                        <fieldset> 
+                            <legend>Sexo:</legend>
+
+
+                            <div class="grupo">
+                                <label>
+                                    <input type="checkbox" id="hombre" name="hombre">Hombre
+                                </label>
+                                <label>
+                                    <input type="checkbox" id="mujer" name="mujer">Mujer
+                                </label>
+                            </div>
+                            
+                            
+
+                        </fieldset> 
+
+                    </fieldset>
+
+                       
+
+                </div>
+
+                <div class ="columna-datos-medicos">
+
+                    <fieldset>
+                        <legend>Datos médicos</legend>
+
+                        <label> ¿Presenta embarazo? <br></br>
+                            <div class="grupo">
+                                <label>
+                                    <input type="checkbox" id= "inputSIEmbarazo" name="SIembarazo">Si
+                                </label>
+                                <label>
+                                    <input type="checkbox" id= "inputNOEmbarazo" name="NOembarazo">No
+                                </label>
+
+                            </div>
+
+                        <br></br>
+                        </label> ¿Presenta algun padecimiento? <br></br>
+
+                        <label>
+                            <fieldset>
+                                <legend>Colesterol</legend> 
+                                <div class ="grupo">
+                                    <label> 
+                                        <input type="checkbox" id= "Alto" name="alto">Alto
+
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" id= "Bajo" name="colesterol">Bajo
+                                    </label>
+                                </div>
+                            </fieldset>
+                        </label>
+
+                        <br></br>
+
+                        <label>
+                            <fieldset>
+                                <legend>Diabetes</legend> 
+                                <div class ="grupo">
+                                    <label> 
+                                        <input type="checkbox" id= "Alto" name="alto">Tipo 1
+
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" id= "Bajo" name="colesterol">Tipo 2
+                                    </label>
+                                </div>
+                            </fieldset>
+                        </label>
+
+                    
+                        
+
+
+
+                </div>
+
+                <div class="columna-habitos">
+
+                    <fieldset>
+
+                        <legend>Habitos de salud</legend>
+
+
+                        <label><br>
+                            <input type ="checkbox" name = fuma><strong>Consumo de tabaco</strong> 
+                        </label>
+                        <div style="margin-left: 80px;">
+                            <label>
+                                <input type="radio" name="frecuencia-fumar" value="ocasional">Ocasional
+                                <br>    
+                            </label>
+                            <label>
+                                <input type="radio" name="frecuencia-fumar" value="diario">Diario
+                                <br>
+                            </label><br>
+
+                        </div>
+
+                        <label><br>
+                            <input type ="checkbox" name = ejercicio><strong>Hace ejercicio</strong> 
+                        </label>
+                        <div style="margin-left: 80px;">
+                            <label>
+                                <input type="radio" name="frecuencia-ejercicio" value="ocasional">Ocasional
+                                <br>    
+                            </label>
+                            <label>
+                                <input type="radio" name="frecuencia-fumar" value="diario">Frecuentemente
+                                <br>
+                            </label><br>
+
+                        </div>
+
+                    </fieldset>
+
+
+                </div>
+
+
+
+            </div>
+
+            <div class="imagenes">
+
+                <div class="imagen1">
+                    <img class="img" src="https://www.starmedica.com/s/sfsites/c/cms/delivery/media/MCYX4GWRL6E5FGBASL5QZFTHUXRE" width=" 200"></img>
+                </div>
+                <div class="imagen2">
+                    <img class="img" src="https://www.starmedica.com/s/sfsites/c/cms/delivery/media/MCM5TM6SZCSJD6DJIQYT6EWBIY2Q" width=" 400"></img>
+                    <div class="imagen2v2">
+                        <img class="img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSCubyQsJuQesXGXAzR4kR6mVLx1KP3QpPnZEAwuW4vaIkEKfhU_1_xfBA&s=10" width="200"></img>
+
+                    </div>
+
+
+                </div>
+                
+            </div>
+
+            
+
+
 
         </div>
     </body>

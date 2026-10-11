@@ -8,8 +8,8 @@
     width: 100%; /*Define que la caja ocupará todo el ancho disponible de la pantalla o de su elemento contenedor.*/
     max-width: 1350px; /*Fija un límite máximo de expansión, todas las cajas deben entrar en la estructura del contenedor*/
     margin: 0 auto; /*Centra el contenedor horizontalmente*/
-    border: 2px solid #000000; /*Crea un borde alrededor de todo el contenedor de un grosor de 2 píxeles*/
-    background-color: #e4f1ff;
+    border: 1px solid #000000; /*Crea un borde alrededor de todo el contenedor de un grosor de un pixel*/
+    background-color: #d9ecff;
     display: flex; /*activa el modelo de caja flexible, alinea de forma automática las cajas dentro de un contenedor*/
     flex-direction: column; /*flex-direction: column cambia la dirección predeterminada de los elementos en un 
     contenedor flexible: en lugar de alinearlos horizontalmente en una fila, los acomoda verticalmente en columna, uno debajo del otro*/
@@ -28,13 +28,23 @@ header, .header-clinica{
      ELEMENTOS que tiene adentro (como el título y el buscador) */
     /*el primer valor (6px) aplica para la parte superior e inferior (arriba y abajo), y 
     el segundo valor (8px) aplica para los lados*/
-    padding: 20px 30px; 
+    padding: 10px 20px; 
     background-color: #14006e;
     display: flex; /*se necesita ya que si no se pone  las herramientas de alineación y distribución como align-items o justify-content no funcionan */
     align-items: center; /*Sin align-items: center;, los elementos por defecto se acomodarían pegados a la parte de arriba de la caja*/ 
     justify-content: space-between; /*Controla la distribución horizontal, lo que hace space-between 
     es empujar los elementos hacia los extremos opuestos, manda uno completamente a la izquierda y 
     el otro completamente a la derecha. Esto sirve para poner dentro el buscador a la  derecha*/
+}
+
+.boton {
+    background-color: #ffffff;
+    color:#14006e;
+    padding: 8px 16px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+
 }
 
 header h1, .header-registro-signos h1 {
@@ -48,7 +58,7 @@ header h1, .header-registro-signos h1 {
 }
 
 .seccion-ver-tablas {
-    border: 2px solid #000000;
+    border: 1px solid #000000;
     padding: 6px 8px;
     
 }
@@ -71,3 +81,98 @@ Esa propiedad agarró al título (primer elemento), al <nav> (segundo elemento) 
     font-size: 0.95rem;
     font-weight: 500;
 }
+
+
+
+fieldset {
+    border: 1px solid #ccc; /* Cambia el grosor y color del borde */
+    border-radius: 4px;     /* Redondea las esquinas si lo deseas */
+    padding: 10px;          /* Espacio interno para que no se peguen los elementos */
+}
+
+legend {
+    font-weight: bold;      /* Cambia el estilo del texto del título */
+    padding: 0 4px;       
+}
+
+
+.grupo{
+    display: flex;
+    gap: 20px;
+   
+}
+
+
+
+.columnas {
+    display: flex;
+    gap: 8px;
+    padding: 6px 8px;
+    /*align-items: flex-start; manda los elementos hacia ARRIBA
+    Si no lo pusieras, los elementos se estirarían ocupando todo el 
+    alto de la caja. Con flex-start arriba, se quedan encogidos a su tamaño normal pero pegados al borde superior.*/
+    align-items: flex-start;
+}
+
+.columna-datos-personales{
+    display: flex;
+    width: 18%;
+    border: 1px solid #000000;
+    padding: 6px;
+}
+
+
+
+
+.columna-datos-medicos{
+    display: flex;
+    width: 18%;
+    border: 1px solid #000000;
+    padding: 6px;
+}
+
+.columna-habitos{
+    display: flex;
+    width: 20%;
+    border: 1px solid #000000;
+    padding: 6px;
+}
+
+.img {
+    border: 2px;
+    border-radius: 10px;    /* Redondea las esquinas de la propia imagen */
+}
+
+.imagenes{
+    display: flex;
+    gap: 8px;
+    padding: 6px 8px;
+    align-items: flex-start;
+    justify-content: space-evenly;
+ 
+
+}
+
+.imagen1{
+    display: flex;
+
+    align-items:flex-start;
+}
+
+.imagen2{
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    gap: 10px
+}
+
+.imagen2v2{
+    display: flex;
+    flex-direction: column;
+
+
+
+}
+
