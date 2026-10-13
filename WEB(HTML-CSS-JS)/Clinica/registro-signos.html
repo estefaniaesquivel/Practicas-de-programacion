@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registro signos</title>
+    </head>
+    <body>
+        <div class = "columnas">
+            <div class = "columna-registro">
+                <form onsubmit="return validarYCalcularSignos()">
+                
+                    <fieldset>
+                    
+                        <legend>Registro de sisgnos vitales:</legend>
+
+                        <p>Temperatura:</p>
+                        <label>
+                            <input type="text" id= "input-temp" name="temp">
+                        </label>
+
+                        <p>Presion arterial sistólica:</p>
+                        <label>
+                            <input type="text" id= "input-pas" name="pas">
+                        </label>
+
+                        <p>Presion arterial diastólica:</p>
+                        <label>
+                            <input type="text" id= "input-pad" name="pad">
+                        </label>
+
+                        <p>Frecuencia cardiaca:</p>
+                        <label>
+                            <input type="text" id= "input-fc" name="fc">
+                        </label>
+                        <br></br>
+                        <button type="submit">Calcular y Registrar</button>
+
+
+                    </fieldset>
+                </form>
+            </div>
+            
+            <div class="reporte" style="margin-top: 20px;">
+                <h3>Resultados del Paciente:</h3>
+                <p><strong>Temperatura:</strong></p>
+                <label>
+                    <input type="text" id="txt-temp" readonly style="background-color: #fff;">
+                </label>
+                <p><strong>PAM:</strong></p>
+                <label>
+                    <input type="text" id="txt-pam" readonly style="background-color: #fff;">
+                </label>
+                <p><strong>Frecuencia Cardíaca:</strong></p>
+                <label>
+                    <input type="text" id="txt-fc" readonly style="background-color: #fff;">
+                </label>
+            </div>
+
+        </div>
+
+        <script src="js/RegistroSignos.js"></script>
+    </body>
+</html>

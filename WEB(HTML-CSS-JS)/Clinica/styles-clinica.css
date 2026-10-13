@@ -183,3 +183,18 @@ legend {
 
 }
 
+.columna-registro{
+    display: flex;
+    width: 20%;
+    border: 1px solid #000000;
+    padding: 6px;
+}
+
+.reporte{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    border: 1px solid #000000;
+    padding: 6px;
+
+}
